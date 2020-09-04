@@ -1,0 +1,22 @@
+/* Footer */
+
+.footer {
+  background: #c73c5e;
+  text-align: center;
+}
+.footer-text {
+  color: #f3f5f5;
+  font-size: 0.85rem;
+  letter-spacing: 0.6rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+.footer-text i {
+  display: block;
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  padding-right: 1rem;
+}
+
+/* End of Footer */

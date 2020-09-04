@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f3f5f5;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+/* Banner Style */
+.banner {
+  align-items: center;
+  background-image: -webkit-linear-gradient(
+      rgba(243, 245, 245, 0.4),
+      rgba(243, 245, 245, 0.7)
+    ),
+    url("/images/blank-composition-desk-display-317355.jpg");
+  background-position: 0% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-attachment: scroll;
+  background-color: transparent;
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  min-height: 100vh;
+  opacity: 75;
+  text-align: center;
+}
+.banner-text {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.banner-text h1 {
+  color: #a22e4b;
+  font-weight: 800;
+  font-size: 65px;
+  margin-bottom: 10px;
+}
+.banner-text h3 {
+  color: #333;
+  font-size: 35px;
+  font-weight: 200;
+  line-height: 40px;
+  margin: 10px 0;
+  text-transform: capitalize;
+  height: 40px;
+}
+.button {
+  text-decoration: none;
+}
+.social-icon {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border-radius: 80%;
+  color: #f3f5f5;
+}
+.button .social-icon:hover {
+  color: #c73c5e;
+  background-color: #f3f5f5;
+}
+
+.button {
+  border-radius: 80%;
+  margin: 0px 10px;
+  color: #f3f5f5;
+  background-color: #c73c5e;
+  border: 3px solid #a22e4b;
+}
+
+.button .social-icon i {
+  width: 100%;
+  text-align: center;
+}
+
+.button .social-icon i {
+  display: inline-block;
+  font-size: 25px;
+
+  transition: all 1s ease;
+}
+#contact-icons {
+  list-style-type: none;
+  margin: 20px;
+}
+#contact-icons li {
+  display: inline-block;
+}
+
+.social-icon i {
+  text-decoration: none;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#view-project-button {
+  background: transparent;
+  border: 3px solid #a22e4b;
+  display: inline-block;
+  font-size: 25px;
+  margin: 95px;
+  padding: 0px;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+#view-project-button a {
+  color: #a22e4b;
+  text-decoration: none;
+  padding: 13px 30px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#view-project-button a:hover {
+  color: #f3f5f5;
+}
+
+#view-project-button:hover {
+  background-color: #c73c5e;
+  color: #f3f5f5;
+}
+svg {
+  width: 300px;
+  height: 300px;
+}
+
+.title {
+  text-align: center;
+  color: #000000;
+  font-size: 2.3rem;
+  font-weight: 700;
+  padding: 1rem 0px;
+  text-align: center;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+@media screen and (max-width: 876px) {
+  .banner-text h1 {
+    font-size: 50px;
+  }
+}
+
+/* End of Banner Style */

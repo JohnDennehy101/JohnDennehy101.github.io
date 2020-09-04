@@ -1,0 +1,66 @@
+/* About Section */
+
+.about {
+  background: #ededed;
+  padding: 1rem 0;
+}
+
+#about-timeline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px auto;
+  background-color: #ededed;
+}
+
+.about-timeline-individual-component {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-timeline-individual-component-duration {
+  color: #333333;
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding: 10px 0px;
+  text-align: center;
+  width: 80%;
+  margin: 10px auto;
+}
+.about-timeline-individual-component-title {
+  color: #000000;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem 0px;
+  text-align: center;
+  width: 80%;
+  margin: 20px auto 25px auto;
+}
+.about-text {
+  color: #333333;
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding: 10px 0px;
+  text-align: center;
+  width: 95%;
+  margin: 3px auto;
+}
+
+#about-text-container {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  #about-timeline-container {
+    flex: 1 100%;
+    flex-wrap: wrap;
+  }
+  .about-text {
+    width: 90%;
+  }
+}
+
+/* End of About Section */
