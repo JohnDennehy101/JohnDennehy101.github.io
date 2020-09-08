@@ -11,7 +11,7 @@
 }
 .footer-text {
   color: #f3f5f5;
-  font-size: 0.85rem;
+  font-size: 1rem;
   letter-spacing: 0.6rem;
   margin-top: 1rem;
   padding-bottom: 1rem;
@@ -19,7 +19,7 @@
 }
 .footer-text i {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   padding-bottom: 10px;
   padding-right: 1rem;
 }

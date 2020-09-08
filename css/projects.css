@@ -11,54 +11,13 @@
   flex: 0 0 calc(50% - 10px);
   margin: 20px auto;
 }
-.projects-image {
-  background-image: url(../images/Project1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 200px;
-  margin: 30px auto;
-  padding: 20px auto;
-  text-align: center;
-  width: 80%;
-  border: 2px solid #212529;
-  border-radius: 5px;
-}
 
 .projects-svg-element {
   width: 80%;
   margin: 40px auto;
   display: block;
 }
-.projects-image2 {
-  background-image: url(../images/Project2.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 200px;
-  margin: 30px auto;
-  padding: 20px auto;
-  text-align: center;
-  width: 60%;
-}
-.projects-image3 {
-  background-image: url(../images/Project3.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 200px;
-  margin: 30px auto;
-  padding: 20px auto;
-  text-align: center;
-  width: 60%;
-}
-.projects-image4 {
-  background-image: url(../images/Project4.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 200px;
-  margin: 30px auto;
-  padding: 20px auto;
-  text-align: center;
-  width: 60%;
-}
+
 .projects-detail-custom h4 {
   color: #333333;
   font-size: 30px;
@@ -153,18 +112,7 @@
 .view-project-site-button a:hover {
   color: #c73c5e;
 }
-.projects-detail h4 {
-  color: #3c5ec7;
-  font-size: 30px;
-  letter-spacing: 0.2rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-.projects-detail p {
-  font-size: 1.2rem;
-  padding: 10px 0px;
-  text-align: center;
-}
+
 .projects-detail h5 {
   color: #a22e4b;
   font-size: 20px;
@@ -192,6 +140,15 @@
   .projects {
     flex: 1 100%;
     flex-wrap: wrap;
+  }
+  .view-project-github-button {
+    width: 45%;
+    font-size: 1rem;
+  }
+
+  .view-project-site-button {
+    width: 45%;
+    font-size: 1rem;
   }
 }
 /* End of Projects Section */
