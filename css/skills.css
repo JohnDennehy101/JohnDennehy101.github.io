@@ -13,6 +13,16 @@
   background: #f3f5f5;
   padding: 3rem 0;
 }
+.skills-background {
+  background: linear-gradient(
+      rgba(243, 245, 245, 0.6),
+      rgba(243, 245, 245, 0.8)
+    ),
+    url(../images/backlit-blogging-coding-34153.jpg) center/cover no-repeat
+      fixed;
+  color: #333;
+  padding: 3rem 0;
+}
 .skill-title-name {
   color: #3c5ec7;
   font-size: 30px;
@@ -33,8 +43,9 @@
   transition: all 0.5s ease-in;
 }
 .skills-single-service:hover {
-  background: #f3f5f5;
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  /*background: #f3f5f5; */
+  background: rgba(243, 245, 245, 0.6);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
 }
 .skills-single-service-icon {
   color: #c73c5e;
