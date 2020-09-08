@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="css/main.css" />
     <!--Header CSS-->
     <link rel="stylesheet" href="css/header.css" />
-    <!--Education CSS-->
-    <link rel="stylesheet" href="css/education.css" />
     <!--Footer CSS-->
     <link rel="stylesheet" href="css/footer.css" />
     <!--Contact Details CSS-->
@@ -1827,25 +1825,31 @@
           method="POST"
           class="form-group"
         >
+          <label for="senderName">Name</label>
           <input
             type="text"
             name="name"
-            placeholder="name"
+            placeholder="Your name..."
             class="form-control"
+            id="senderName"
           />
+          <label for="senderEmail">Email Address</label>
           <input
             type="email"
             name="email"
-            placeholder="email"
+            placeholder="name@example.com"
             class="form-control"
+            id="senderEmail"
           />
+          <label for="senderMessage">Your Message</label>
           <textarea
             name="message"
             rows="5"
             class="form-control"
-            placeholder="message"
+            placeholder=""
+            id="senderMessage"
           ></textarea>
-          <button type="submit" class="main-btn">Send</button>
+          <button type="submit" id="contact-btn">Send</button>
         </form>
       </article>
     </div>
