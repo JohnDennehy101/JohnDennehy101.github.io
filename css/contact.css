@@ -55,6 +55,16 @@ label {
   .contact-form {
     width: 80%;
   }
+  .form-group {
+    margin: 20px 0px;
+  }
+  #contact-btn {
+    width: 50%;
+    font-size: 1rem;
+  }
+  #contact {
+    margin: 3rem auto;
+  }
 }
 
 /* End of Contact Section */

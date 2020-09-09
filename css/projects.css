@@ -135,8 +135,34 @@
   transition: all 1s ease;
   width: 10%;
 }
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 321px) {
+  .projects {
+    flex: 1 100%;
+    flex-wrap: wrap;
+  }
+  .view-project-github-button {
+    width: 45%;
+    font-size: 1rem;
+  }
+  .view-project-site-button {
+    width: 45%;
+    font-size: 1rem;
+  }
+  .projects-svg-element {
+    margin: 0px auto;
+    height: 245px;
+  }
+  .projects-detail-custom p {
+    width: 90%;
+  }
+  .projects-detail-custom h4 {
+    font-size: 1.5rem;
+  }
+  .projects-detail-custom h5 {
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 322px) and (max-width: 576px) {
   .projects {
     flex: 1 100%;
     flex-wrap: wrap;
@@ -149,6 +175,16 @@
   .view-project-site-button {
     width: 45%;
     font-size: 1rem;
+  }
+  .projects-svg-element {
+    margin: 0px auto;
+    height: 245px;
+  }
+  .projects-detail-custom p {
+    width: 90%;
+  }
+  .projects-detail-custom h4 {
+    font-size: 1.5rem;
   }
 }
 /* End of Projects Section */

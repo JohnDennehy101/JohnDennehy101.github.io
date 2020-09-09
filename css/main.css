@@ -18,9 +18,9 @@ header {
   align-items: center;
   background-image: -webkit-linear-gradient(
       rgba(243, 245, 245, 0.4),
-      rgba(243, 245, 245, 0.7)
+      rgba(243, 245, 245, 0.5)
     ),
-    url("/images/blank-composition-desk-display-317355.jpg");
+    url("/images/banner-image-desktop.jpg");
   background-position: 0% 0%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -114,7 +114,7 @@ header {
   border: 3px solid #a22e4b;
   display: inline-block;
   font-size: 25px;
-  margin: 95px;
+  margin: 45px;
   padding: 0px;
   text-decoration: none;
   text-transform: capitalize;
@@ -154,9 +154,59 @@ svg {
   margin: 2rem auto;
 }
 
-@media screen and (max-width: 876px) {
+@media screen and (max-width: 321px) {
+  .banner-text h1 {
+    font-size: 40px;
+  }
+  .banner-text h3 {
+    font-size: 30px;
+  }
+  #view-project-button {
+    width: 80%;
+  }
+  #view-project-button a {
+    display: block;
+    padding: 13px 20px;
+  }
+  .banner {
+    background-image: -webkit-linear-gradient(
+        rgba(243, 245, 245, 0.4),
+        rgba(243, 245, 245, 0.5)
+      ),
+      url("/images/banner-image-mobile-mini.jpg");
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  #view-project-button {
+    width: 60%;
+  }
+  #view-project-button a {
+    display: block;
+    font-size: 20px;
+  }
+  .title {
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (min-width: 322px) and (max-width: 876px) {
   .banner-text h1 {
     font-size: 50px;
+  }
+  .banner {
+    background-image: -webkit-linear-gradient(
+        rgba(243, 245, 245, 0.4),
+        rgba(243, 245, 245, 0.5)
+      ),
+      url("/images/banner-image-mobile.jpg");
+    background-position: 0% 0%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-attachment: scroll;
+    background-color: transparent;
+    min-height: 100vh;
+    opacity: 75;
   }
 }
 

@@ -24,4 +24,10 @@
   padding-right: 1rem;
 }
 
+@media screen and (max-width: 576px) {
+  .footer-text {
+    letter-spacing: 0.5rem;
+  }
+}
+
 /* End of Footer */

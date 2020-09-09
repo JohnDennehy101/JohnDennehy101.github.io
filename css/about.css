@@ -53,13 +53,34 @@
   margin-top: 2rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 321px) {
+  .about-timeline-individual-component-title {
+    font-size: 1rem;
+    width: 90%;
+  }
+  #about-timeline-container {
+    flex: 1 100%;
+    flex-wrap: wrap;
+  }
+  svg {
+    height: 270px;
+  }
+}
+
+@media screen and (min-width: 322px) and (max-width: 576px) {
   #about-timeline-container {
     flex: 1 100%;
     flex-wrap: wrap;
   }
   .about-text {
     width: 90%;
+  }
+  .about-timeline-individual-component-title {
+    width: 90%;
+    font-size: 1.1rem;
+  }
+  svg {
+    height: 270px;
   }
 }
 
