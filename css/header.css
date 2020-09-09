@@ -19,6 +19,9 @@
   text-decoration: none;
   transition: color 1s ease, background 1s ease;
 }
+.nav-logo button {
+  display: none;
+}
 
 #nav ul li a:hover {
   background: #f3f5f5;
@@ -33,7 +36,6 @@
 }
 .nav-logo img {
   border-radius: 30px;
-  cursor: pointer;
 }
 #nav {
   background: #c73c5e;
@@ -91,9 +93,18 @@
   #nav .nav-links-mobile li {
     display: block;
   }
+  .nav-logo button {
+    background-color: #c73c5e;
+    border-color: rgba(255, 255, 255, 0.3);
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 5px 0px 10px;
+  }
   .nav-logo #nav-icon {
     display: block;
-    width: 100%;
+    width: 10%;
     text-align: right;
     color: #fff;
     margin: 10px;

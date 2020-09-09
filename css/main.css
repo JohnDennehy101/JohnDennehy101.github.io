@@ -17,8 +17,8 @@ header {
 .banner {
   align-items: center;
   background-image: -webkit-linear-gradient(
-      rgba(243, 245, 245, 0.4),
-      rgba(243, 245, 245, 0.5)
+      rgba(243, 245, 245, 0.25),
+      rgba(243, 245, 245, 0.4)
     ),
     url("/images/banner-image-desktop.jpg");
   background-position: 0% 0%;
@@ -195,8 +195,8 @@ svg {
   }
   .banner {
     background-image: -webkit-linear-gradient(
-        rgba(243, 245, 245, 0.4),
-        rgba(243, 245, 245, 0.5)
+        rgba(243, 245, 245, 0.25),
+        rgba(243, 245, 245, 0.4)
       ),
       url("/images/banner-image-mobile.jpg");
     background-position: 0% 0%;
