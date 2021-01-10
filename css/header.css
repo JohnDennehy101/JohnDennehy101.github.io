@@ -1,4 +1,8 @@
 /* Header Style */
+
+html {
+  scroll-behavior: smooth;
+}
 #nav ul {
   display: none;
   list-style-type: none;

@@ -7,9 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>John Dennehy | Portfolio</title>
     <!--Main CSS-->
-    <link rel="stylesheet" href="css/main.css" />
+
+    <link
+      rel="preload"
+      href="css/main.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript> <link rel="stylesheet" href="css/main.css" /></noscript>
     <!--Header CSS-->
-    <link rel="stylesheet" href="css/header.css" />
+    <!-- <link rel="stylesheet" href="css/header.css" />-->
+    <link
+      rel="preload"
+      href="css/header.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript> <link rel="stylesheet" href="css/header.css" /></noscript>
     <!--Favicon-->
     <link rel="icon" href="/images/eyeglasses.png" />
     <!--Footer CSS-->
@@ -55,8 +69,11 @@
       href="css/skills.css"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
+      content-encoding="gzip"
     />
-    <noscript> <link rel="stylesheet" href="css/skills.css" /></noscript>
+    <noscript>
+      <link rel="stylesheet" href="css/skills.css" content-encoding="gzip"
+    /></noscript>
     <!--FontAwesome Icons-->
     <style type="text/css">
       .fa,
@@ -175,7 +192,7 @@
       <nav id="nav">
         <div class="nav-logo">
           <img src="images/small_headshot.jpg" alt="profile photo" />
-          <button>
+          <button aria-label="Menu Button">
             <i class="fas fa-bars" id="nav-icon"></i>
           </button>
         </div>
@@ -273,23 +290,29 @@
       <div id="about-text-container">
         <p class="title">About Me</p>
         <p class="about-text">
-          I work as a Product Analyst on the checkout team at eShopWorld. As I
-          have a keen interest in technology, I am currently studying Computer
-          Science part-time at WIT. I really enjoy learning new skills which is
-          why I decided to make the transition to software developer.
+          I'm a Product Analyst on the checkout team at eShopWorld, one of the world's leading global eCommerce platforms. 
         </p>
 
+        <p class="about-text">As I
+        have a keen interest in technology, I am currently studying Computer
+        Science part-time at WIT.
+        I obtained a first class honours degree in Business Studies & French from the University of
+        Limerick in 2018.
+        I'm an articulate communicator with a flexible approach to work from a diverse range of
+        professional experiences in the technology and language learning sectors in Ireland and abroad.</p>
+
+
+        <p class="about-text">I'm also an innovative team player with a passion for technology and continuous learning looking to transition to a development
+        role.
+        If you think I could be a good fit for your organisation,
+        feel free to visit my contact section.</p>
+
+        
         <p class="about-text">
-          1:1 degree in Business Studies & French from the University of
-          Limerick. Regular competitor in 5k, 10k and half-marathons around
-          Ireland. Regular competitor in 5k, 10k and half-marathons around
-          Ireland.
+            Outside of work, I like taking part in 5k, 10k and half-marathons around
+            Ireland and go to gigs on a regular basis.
         </p>
-        <p class="about-text">
-          I'm currently looking for an opportunity to work as a software
-          developer. If you think I could be a good fit for your organisation,
-          feel free to visit my contact section.
-        </p>
+
       </div>
       <div id="about-timeline-container">
         <div class="about-timeline-individual-component">
@@ -431,7 +454,7 @@
           </svg>
           <p class="about-timeline-individual-component-duration">2014-2018</p>
           <p class="about-timeline-individual-component-title">
-            BBS in Business & French (1st Class UL)
+            BBS in Business & French @ UL (1st)
           </p>
         </div>
         <div class="about-timeline-individual-component">
@@ -1049,7 +1072,7 @@
           xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
         >
           <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
-          <title>IPAD 2</title>
+          <title>Device SVG</title>
           <desc>Created with Sketch.</desc>
           <defs></defs>
           <g
@@ -1084,6 +1107,7 @@
                 width="181.999"
                 height="252.917"
               ></rect>
+              <image xlink:href="images/Project1Tablet.png" width="181" height="252" x="17" y="-40"></image>
               <circle
                 sketch:type="MSShapeGroup"
                 cx="108.021"
@@ -1138,7 +1162,7 @@
                 height="292.009"
               ></rect>
               <image
-                xlink:href="images/Project1.png"
+                xlink:href="/images/Project1Desktop.png"
                 width="500"
                 height="290"
                 x="96"
@@ -1169,6 +1193,7 @@
                 width="111.93"
                 height="199.084"
               ></rect>
+              <image xlink:href="images/Project1Mobile.png" width="111" height="199" x="9" y="36"></image>
               <path
                 d="M77,25.746 C77,26.381 76.561,26.893 76.02,26.893 L55.918,26.893 C55.376,26.893 54.938,26.38 54.938,25.746 L54.938,23.166 C54.938,22.531 55.377,22.019 55.918,22.019 L76.02,22.019 C76.561,22.019 77,22.532 77,23.166 L77,25.746 L77,25.746 Z"
                 id="speaker"
@@ -1186,13 +1211,15 @@
           </g>
         </svg>
         <div class="projects-detail-custom">
-          <h4>Holiday Book</h4>
-          <p>A multi-page static site composed with Lorem Ipsum content.</p>
-          <h5>#HTML #CSS #JAVASCRIPT</h5>
+          <h4>Play Gym Application</h4>
+          <p>
+            A web application that allows users (and their trainers) to log and track a user’s key health indicators over time.
+          </p>
+          <h5> #JAVASCRIPT #EXPRESS #FOMANTIC-UI</h5>
           <div class="project-buttons-container">
             <button class="view-project-github-button">
               <a
-                href="https://holidaybook.netlify.com/"
+                href="https://github.com/JohnDennehy101/play-gym-application-js"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -1202,7 +1229,7 @@
             </button>
             <button class="view-project-site-button">
               <a
-                href="https://holidaybook.netlify.com/"
+                href="https://play-gym-application.herokuapp.com"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -1229,7 +1256,7 @@
           xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
         >
           <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
-          <title>IPAD 2</title>
+          <title>Device SVG</title>
           <desc>Created with Sketch.</desc>
           <defs></defs>
           <g
@@ -1264,6 +1291,8 @@
                 width="181.999"
                 height="252.917"
               ></rect>
+              <image xlink:href="images/Project2Tablet.png" width="181" height="252" x="17" y="5"></image>
+              
               <circle
                 sketch:type="MSShapeGroup"
                 cx="108.021"
@@ -1318,7 +1347,7 @@
                 height="292.009"
               ></rect>
               <image
-                xlink:href="images/Project1.png"
+                xlink:href="images/Project2Desktop.png"
                 width="500"
                 height="290"
                 x="96"
@@ -1349,6 +1378,7 @@
                 width="111.93"
                 height="199.084"
               ></rect>
+              <image xlink:href="images/Project2Mobile.png" width="111" height="199" x="9" y="36"></image>
               <path
                 d="M77,25.746 C77,26.381 76.561,26.893 76.02,26.893 L55.918,26.893 C55.376,26.893 54.938,26.38 54.938,25.746 L54.938,23.166 C54.938,22.531 55.377,22.019 55.918,22.019 L76.02,22.019 C76.561,22.019 77,22.532 77,23.166 L77,25.746 L77,25.746 Z"
                 sketch:type="MSShapeGroup"
@@ -1365,16 +1395,15 @@
           </g>
         </svg>
         <div class="projects-detail-custom">
-          <h4>The Creative Chef</h4>
+          <h4>Recipe Repository</h4>
           <p>
-            A single page site that uses flexbox and grid to effectively display
-            content on the page.
+            A web application that allows users to view a collection of recipes and discover new recipes via TheMealDB API.
           </p>
-          <h5>#SQL #REACT #MONGODB</h5>
+          <h5>#NODE #MATERIALIZE #MONGODB</h5>
           <div class="project-buttons-container">
             <button class="view-project-github-button">
               <a
-                href="https://holidaybook.netlify.com/"
+                href="https://github.com/JohnDennehy101/recipeRepository"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -1384,7 +1413,7 @@
             </button>
             <button class="view-project-site-button">
               <a
-                href="https://holidaybook.netlify.com/"
+                href="https://recipe-repository-collection.herokuapp.com/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -1412,7 +1441,7 @@
           xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
         >
           <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
-          <title>IPAD 2</title>
+          <title>Device SVG</title>
           <desc>Created with Sketch.</desc>
           <defs></defs>
           <g
@@ -1447,6 +1476,7 @@
                 width="181.999"
                 height="252.917"
               ></rect>
+              <image xlink:href="images/Project4Tablet.png" width="181" height="322" x="17" y="0"></image>
               <circle
                 sketch:type="MSShapeGroup"
                 cx="108.021"
@@ -1501,7 +1531,7 @@
                 height="292.009"
               ></rect>
               <image
-                xlink:href="images/Project1.png"
+                xlink:href="images/Project4Desktop.png"
                 width="500"
                 height="290"
                 x="96"
@@ -1532,6 +1562,7 @@
                 width="111.93"
                 height="199.084"
               ></rect>
+              <image xlink:href="images/Project4Mobile.png" width="111" height="199" x="9" y="36"></image>
               <path
                 d="M77,25.746 C77,26.381 76.561,26.893 76.02,26.893 L55.918,26.893 C55.376,26.893 54.938,26.38 54.938,25.746 L54.938,23.166 C54.938,22.531 55.377,22.019 55.918,22.019 L76.02,22.019 C76.561,22.019 77,22.532 77,23.166 L77,25.746 L77,25.746 Z"
                 sketch:type="MSShapeGroup"
@@ -1548,16 +1579,15 @@
           </g>
         </svg>
         <div class="projects-detail-custom">
-          <h4>The Creative Chef</h4>
+          <h4>Gym Console</h4>
           <p>
-            A single page site that uses flexbox and grid to effectively display
-            content on the page.
+            A console application that allows users (and their trainers) to log health assessments, tracking progress over time.
           </p>
-          <h5>#SQL #REACT #MONGODB</h5>
+          <h5>#JAVA #XML</h5>
           <div class="project-buttons-container">
             <button class="view-project-github-button">
               <a
-                href="https://holidaybook.netlify.com/"
+                href="https://github.com/JohnDennehy101/gym-application"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -1567,7 +1597,7 @@
             </button>
             <button class="view-project-site-button">
               <a
-                href="https://holidaybook.netlify.com/"
+                href="#"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -1595,7 +1625,7 @@
           xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
         >
           <!-- Generator: Sketch 3.0.4 (8054) - http://www.bohemiancoding.com/sketch -->
-          <title>IPAD 2</title>
+          <title>Device SVG</title>
           <desc>Created with Sketch.</desc>
           <defs></defs>
           <g
@@ -1630,6 +1660,7 @@
                 width="181.999"
                 height="252.917"
               ></rect>
+              <image xlink:href="images/Project3Tablet.png" width="181" height="322" x="17" y="0"></image>
               <circle
                 sketch:type="MSShapeGroup"
                 cx="108.021"
@@ -1684,13 +1715,9 @@
                 width="501.073853"
                 height="292.009"
               ></rect>
-              <image
-                xlink:href="images/Project1.png"
-                width="500"
-                height="290"
-                x="96"
-                y="40"
-              ></image>
+                
+                <image xlink:href="images/Project3Desktop.png" width="500" height="290" x="96" y="40"></image>
+              
               <path
                 d="M421,352 L421,355.087 C421,357.288 416.666719,357.952714 413.386719,357.952714 L278.815286,357.952714 C275.364286,357.952714 271,357.289 271,355.087 L271,352"
                 fill="#FFFFFF"
@@ -1716,6 +1743,7 @@
                 width="111.93"
                 height="199.084"
               ></rect>
+              <image xlink:href="images/Project3Mobile.png" width="111" height="199" x="9" y="36"></image>
               <path
                 d="M77,25.746 C77,26.381 76.561,26.893 76.02,26.893 L55.918,26.893 C55.376,26.893 54.938,26.38 54.938,25.746 L54.938,23.166 C54.938,22.531 55.377,22.019 55.918,22.019 L76.02,22.019 C76.561,22.019 77,22.532 77,23.166 L77,25.746 L77,25.746 Z"
                 sketch:type="MSShapeGroup"
@@ -1732,16 +1760,15 @@
           </g>
         </svg>
         <div class="projects-detail-custom">
-          <h4>The Creative Chef</h4>
+          <h4>Portfolio Site</h4>
           <p>
-            A single page site that uses flexbox and grid to effectively display
-            content on the page.
+            A portfolio site that I developed to showcase my projects and technical skills.
           </p>
-          <h5>#SQL #REACT #MONGODB</h5>
+          <h5>#HTML5 #CSS3 #JAVASCRIPT</h5>
           <div class="project-buttons-container">
             <button class="view-project-github-button">
               <a
-                href="https://holidaybook.netlify.com/"
+                href="https://github.com/JohnDennehy101/JohnDennehy101.github.io"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -1751,7 +1778,7 @@
             </button>
             <button class="view-project-site-button">
               <a
-                href="https://holidaybook.netlify.com/"
+                href="https://johndennehy101.github.io/"
                 target="_blank"
                 rel="noreferrer"
               >
